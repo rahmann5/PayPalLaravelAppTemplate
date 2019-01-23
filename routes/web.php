@@ -15,6 +15,5 @@ Route::get('/', "PagesController@index");
 Route::get('/checkout', "CheckoutController@checkout");
 Route::post('/addItem/{id}', "PagesController@addItem")->name("addItem");
 Route::post('/removeItem/{id}', "CheckoutController@removeItem")->name("removeItem");;
-Route::get('/paypalRedirect', "CheckoutController@paypalRedirect");
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
